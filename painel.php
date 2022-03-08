@@ -18,6 +18,10 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/geral.css" rel="stylesheet">
+    <!--Links de acessibilidade-->
+    <link rel="stylesheet" href="src/icons/fontawesome5.9.0/css/all.css" />
+    <link rel="stylesheet" href="src/css/default.css" />
+    <link rel="stylesheet" href="src/css/asb.css" />
 
 
     <style>
@@ -41,8 +45,30 @@
     
   </head>
   <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <style>
+    .access-button {
+      width: 40% !important;
+      border-radius: 50px !important;
+      border: 5px solid #ffffff1f !important;
+    }
     
-<header>
+  </style>
+
+
+
+
+    <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Loja de Roupa</a>
@@ -61,7 +87,7 @@
             <a class="nav-link active" href="#">Catálogos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#contatos">Contado</a>
+            <a class="nav-link active" href="#contatos">Contato</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="cadastrado.php">Cadastrado</a>
@@ -289,6 +315,11 @@
 </style>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+   
+    <script type="text/javascript" src="src/js/asb.js"></script>
+    <!-- Opcional se quiser extender o suporte a browsers mais antigos -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2
       
   </body>
 </html>
